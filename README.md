@@ -1,4 +1,5 @@
 # nixos-config
-This is my nixos configuration
+
+My NixOS config files
 
 - [ ] Move to Flake.nix :tada:
