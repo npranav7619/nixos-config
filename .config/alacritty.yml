@@ -53,3 +53,4 @@ colors:
 window:
   padding:
     x: 2
+  opacity: 0.8
