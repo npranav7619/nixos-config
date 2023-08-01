@@ -115,6 +115,13 @@
    rofi-wayland
    nerdfonts
    spotify
+   burpsuite
+   steghide
+   stegseek
+   john
+   wireshark
+   python311
+   brave
   ];
 
   # Enabling hyprlnd on NixOS
