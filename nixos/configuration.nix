@@ -122,6 +122,9 @@
    wireshark
    python311
    brave
+   vscodium
+   disfetch
+   krabby
   ];
 
   # Enabling hyprlnd on NixOS
@@ -133,7 +136,7 @@
 
   environment.sessionVariables = {
     # If your cursor becomes invisible
-    # WLR_NO_HARDWARE_CURSORS = "1";
+    WLR_NO_HARDWARE_CURSORS = "1";
     # Hint electron apps to use wayland
     NIXOS_OZONE_WL = "1";
   };
@@ -141,13 +144,17 @@
   hardware = {
     # Opengl
     opengl.enable = true;
-
+    opengl.driSupport = true;
+    opengl.driSupport32Bit = true;
     # Most wayland compositors need this
     nvidia.modesetting.enable = true;
+    nvidia.open = false;
+    nvidia.nvidiaSettings = true;
   };
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  services.xserver.videoDrivers = ["nvidia"];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
