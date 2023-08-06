@@ -125,6 +125,7 @@
    vscodium
    disfetch
    krabby
+   zsh
   ];
 
   # Enabling hyprlnd on NixOS
