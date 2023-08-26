@@ -126,6 +126,8 @@
    disfetch
    krabby
    zsh
+   vlc
+   mpv
   ];
 
   # Enabling hyprlnd on NixOS
